@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --navy: #0f172a;
-  --blue: #2563eb;
-  --cyan: #06b6d4;
-  --white: #ffffff;
-  --light: #f8fafc;
-  --slate: #475569;
+  --bg: #0b0e14;
+  --bg-elevated: #12161f;
+  --bg-card: #161b26;
+  --text: #e6e8ec;
+  --text-muted: #94a3b8;
+  --gold: #d4af37;
+  --border: #1f2430;
 }
 
 html {
@@ -15,8 +16,9 @@ html {
 
 body {
   margin: 0;
-  background: var(--white);
-  color: var(--navy);
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-inter), sans-serif;
 }
 
 * {
@@ -24,19 +26,15 @@ body {
 }
 
 ::selection {
-  background: #2563eb;
-  color: white;
+  background: var(--gold);
+  color: #0b0e14;
 }
 
-body {
-  font-family: var(--font-inter), sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-space-grotesk), sans-serif;
 }
+
+.text-gold { color: var(--gold); }
+.border-gold { border-color: var(--gold); }
+.bg-elevated { background: var(--bg-elevated); }
+.bg-card { background: var(--bg-card); }

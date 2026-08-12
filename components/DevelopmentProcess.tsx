@@ -33,13 +33,13 @@ const steps = [
 
 export default function DevelopmentProcess() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-[#0b0e14] py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <p className="font-semibold text-blue-600">
+        <p className="font-semibold text-[#d4af37]">
           DEVELOPMENT PROCESS
         </p>
 
-        <h2 className="mt-3 text-4xl font-bold text-slate-900">
+        <h2 className="mt-3 text-4xl font-bold text-[#e6e8ec]">
           My Development Process
         </h2>
 
@@ -47,17 +47,17 @@ export default function DevelopmentProcess() {
           {steps.map((step) => (
             <div
               key={step.number}
-              className="rounded-2xl border border-slate-200 bg-slate-50 p-6"
+              className="rounded-2xl border border-[#1f2430] bg-[#12161f] p-6"
             >
-              <span className="text-3xl font-bold text-blue-600">
+              <span className="text-3xl font-bold text-[#d4af37]">
                 {step.number}
               </span>
 
-              <h3 className="mt-5 text-xl font-bold">
+              <h3 className="mt-5 text-xl font-bold text-[#e6e8ec]">
                 {step.title}
               </h3>
 
-              <p className="mt-3 text-sm leading-6 text-slate-600">
+              <p className="mt-3 text-sm leading-6 text-[#94a3b8]">
                 {step.description}
               </p>
             </div>

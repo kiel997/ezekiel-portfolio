@@ -19,30 +19,30 @@ export default function ProjectCard({
   project: Project;
 }) {
   return (
-    <article className="group rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+    <article className="group rounded-3xl border border-[#1f2430] bg-[#12161f] p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#d4af37]/40 hover:shadow-xl hover:shadow-black/20">
       <div className="flex items-start justify-between">
-        <span className="text-sm font-bold text-blue-600">
+        <span className="text-sm font-bold text-[#d4af37]">
           PROJECT {project.number}
         </span>
 
         <Link
           href={`/projects/${project.slug}`}
-          className="rounded-full border border-slate-200 p-2 transition group-hover:border-blue-500 group-hover:text-blue-600"
+          className="rounded-full border border-[#1f2430] p-2 transition group-hover:border-[#d4af37] group-hover:text-[#d4af37]"
         >
           <ArrowUpRight size={18} />
         </Link>
       </div>
 
-      <h3 className="mt-5 text-2xl font-bold text-slate-900">
+      <h3 className="mt-5 text-2xl font-bold text-[#e6e8ec]">
         {project.title}
       </h3>
 
-      <p className="mt-4 leading-7 text-slate-600">
+      <p className="mt-4 leading-7 text-[#94a3b8]">
         {project.description}
       </p>
 
       <div className="mt-6">
-        <p className="text-sm font-semibold text-slate-900">
+        <p className="text-sm font-semibold text-[#e6e8ec]">
           Key Features
         </p>
 
@@ -50,9 +50,9 @@ export default function ProjectCard({
           {project.features.map((feature) => (
             <li
               key={feature}
-              className="text-sm text-slate-600"
+              className="text-sm text-[#94a3b8]"
             >
-              ✓ {feature}
+              <span className="text-[#d4af37]">✓</span> {feature}
             </li>
           ))}
         </ul>
@@ -62,7 +62,7 @@ export default function ProjectCard({
         {project.technologies.map((technology) => (
           <span
             key={technology}
-            className="rounded-lg bg-blue-50 px-3 py-1.5 text-xs font-semibold text-blue-700"
+            className="rounded-lg bg-[#d4af37]/10 px-3 py-1.5 text-xs font-semibold text-[#d4af37]"
           >
             {technology}
           </span>
@@ -75,7 +75,7 @@ export default function ProjectCard({
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold"
+            className="flex items-center gap-2 rounded-xl border border-[#1f2430] px-4 py-2 text-sm font-semibold text-[#e6e8ec] transition hover:border-[#d4af37] hover:text-[#d4af37]"
           >
             <FaGithub size={16} />
             GitHub
@@ -84,7 +84,7 @@ export default function ProjectCard({
 
         <Link
           href={`/projects/${project.slug}`}
-          className="rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white"
+          className="rounded-xl bg-[#d4af37] px-4 py-2 text-sm font-semibold text-[#0b0e14] transition hover:opacity-90"
         >
           View Details
         </Link>

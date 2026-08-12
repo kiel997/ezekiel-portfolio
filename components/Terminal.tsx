@@ -10,22 +10,22 @@ const technologies = [
 
 export default function Terminal() {
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-950 shadow-2xl">
-      <div className="flex items-center gap-2 border-b border-slate-800 px-5 py-4">
+    <div className="overflow-hidden rounded-2xl border border-[#1f2430] bg-[#0b0e14] shadow-2xl shadow-black/30">
+      <div className="flex items-center gap-2 border-b border-[#1f2430] px-5 py-4">
         <span className="h-3 w-3 rounded-full bg-red-400" />
         <span className="h-3 w-3 rounded-full bg-yellow-400" />
         <span className="h-3 w-3 rounded-full bg-green-400" />
       </div>
 
       <div className="p-6 font-mono text-sm">
-        <p className="text-slate-400">
+        <p className="text-[#94a3b8]">
           $ npm run developer
         </p>
 
         <div className="mt-5 space-y-3">
           {technologies.map((technology) => (
-            <p key={technology} className="text-cyan-400">
-              <span className="mr-2 text-blue-400">&gt;</span>
+            <p key={technology} className="text-[#d4af37]">
+              <span className="mr-2 text-[#d4af37]/60">&gt;</span>
               {technology}
             </p>
           ))}
